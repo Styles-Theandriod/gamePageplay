@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Tilt+Prism&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url('https://mir-s3-cdn-cf.behance.net/project_modules/1400/f326a553744767.593fcb61247ff.png');
+    background-position: center;
+    background-size:cover;
+    background-repeat: no-repeat;
+    /* background-color: blue; */
+    height:100vh;
+    cursor: none;
+}
+
+.container{
+    width:50%;
+    height:400px;
+    /* background-color: red; */
+    margin: 0 auto;
+    margin-top: 10vh;
+}
+
+.title{
+    letter-spacing: 2px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color:#8b0000;
+    font-size:68px;
+    font-weight: 400;
+    text-shadow: -2px 0px 0px #ffc000;
+    text-align: center;
+}
+
+.links__items{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    flex-direction: column;
+    font-size:26px;
+    font-weight:900;
+    cursor: none;
+}
+
+.links__items{
+    margin-top: 50px;
+}
+
+.btn-home{
+    margin: 10px auto;
+    width: 250px;
+    letter-spacing: 2px;
+    border-radius: 8px;
+    font-family: 'Skranji', cursive;
+    color: #ffc000;
+    font-size: 18px;
+    font-weight: 400;
+    text-shadow: 0 1px 3px #000;
+    text-align: center;
+    padding: 10px 0;
+    background: radial-gradient(circle, #8b0000, #8b0000);
+    border-top: 4px ridge #ffb000;
+    border-left: 4px groove #ffb000;
+    border-right: 4px ridge #ffb000;
+    border-bottom: 4px groove #ffb000;
+    box-shadow: inset 0px 0px 5px 3px rgba(1,1,1,0.3);
+  }
+
+  .btn-home:hover{
+    background: radial-gradient(circle, #e52b2b, #8b0000);
+    box-shadow: 0px 0 5px 5px rgba(255,255,255,0.2)
+  }
+  
+  .btn-home:active{
+    background: radial-gradient(circle, #ec6a6a, #e52b2b);
+    box-shadow: 0px 0 5px 5px rgba(255,255,255,0.2)
+  }
+#world{
+    height:100vh;
+    width:100%;
+    display: none;
+}
+
+.small{
+    width:6px;
+    height: 6px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.big{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-bottom:20rem;
+    animation-name:stretch;
+    animation-duration: 2.0s;
+    animation-timing-function: ease-out;
+    animation-direction: alternate;
+    animation-iteration-count:infinite; 
+    animation-play-state: running;
+    position: absolute;
+}
+
+@keyframes stretch {
+    0%{
+        opacity:0.2;
+        background-color:green;
+        border-radius:100%;
+    }
+    50%{
+        background-color:orange;
+    }
+    100%{
+        background-color:orangered;
+    }
+}
+
+.grid {
+    height: 560px;
+    min-width: 560px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 80px;
+    margin-top: 50px;
+    background-color: rgba(109, 127, 151, 0.5);
+    padding:5px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5) inset, 0 1px 0 #fff;
+    color: #85796b;
+}
+
+.grid div {
+    height: 70px;
+    width: 70px;
+}
+
+h3 {
+ font-family: "Montserrat", sans-serif;
+ text-transform: uppercase;
+}
+
+h1 {
+ font-family: "Montserrat", sans-serif;
+ text-transform: uppercase;
+ margin-top: -10px;
+}
+
+.invisible {
+    background-color: white;
+}
+
+body {
+  /* background-image: url("candy-crush-background-2.png");
+  max-width: 100vh;
+  display: flex; */
+}
+
+.score-board {
+  background-color: pink;
+  border-radius: 10px;
+  margin-top: 200px;
+  margin-left: 200px;
+  margin-bottom: 350px;
+  min-width: 200px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  background-image: linear-gradient(#FFB6C1, #FFC0CB);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5) inset, 0 1px 0 #fff;
+  color: #85796b;
+}
